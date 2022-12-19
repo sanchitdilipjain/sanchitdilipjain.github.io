@@ -219,3 +219,11 @@ body {
 .pagination-nav .pagination-button .pagination-link:hover {
   color: var(--color-text-link);
 }
+
+.markdown-body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+  width: 60%;
+}
