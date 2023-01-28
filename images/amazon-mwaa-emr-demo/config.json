@@ -1,0 +1,7 @@
+{
+  "config": {
+    "application_id": "application_id",
+    "s3bucket": "s3bucket",
+    "iam_role_arn": "iam_role_arn"
+  }
+}
