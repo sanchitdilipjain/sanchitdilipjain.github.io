@@ -22,6 +22,17 @@ subjects:
 ---
 
 apiVersion: v1
+kind: Secret
+metadata:
+  name: admin-user
+  namespace: kubernetes-dashboard
+  annotations:
+    kubernetes.io/service-account.name: "admin-user"   
+type: kubernetes.io/service-account-token
+
+---
+
+apiVersion: v1
 kind: ServiceAccount
 metadata:
   labels:
@@ -31,14 +42,3 @@ metadata:
   namespace: kube-system
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::902135810183:role/AmazonEKSLoadBalancerControllerRole
-
----
-
-apiVersion: v1
-kind: Secret
-metadata:
-  name: admin-user
-  namespace: kubernetes-dashboard
-  annotations:
-    kubernetes.io/service-account.name: "admin-user"   
-type: kubernetes.io/service-account-token
