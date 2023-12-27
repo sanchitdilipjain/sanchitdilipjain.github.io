@@ -6,6 +6,7 @@ metadata:
 spec:
   image: flink:1.16
   flinkVersion: v1_16
+  emrReleaseLabel: "emr-6.15.0"
   flinkConfiguration:
     taskmanager.numberOfTaskSlots: "2"
     state.savepoints.dir: file:///flink/data/checkpoint/savepoints
