@@ -4,8 +4,8 @@ metadata:
   name: demo-flink-job
   namespace: emr-on-eks-demo
 spec:
-  image: flink:1.16
-  flinkVersion: v1_16
+  image: flink:1.17
+  flinkVersion: v1_17
   emrReleaseLabel: "emr-6.15.0"
   flinkConfiguration:
     taskmanager.numberOfTaskSlots: "2"
@@ -52,6 +52,7 @@ spec:
             path: /local1
             type: Directory
   jobManager:
+    storageDir: file:///flink/data/checkpoint/ha
     resource:
       memory: "2048m"
       cpu: 1
