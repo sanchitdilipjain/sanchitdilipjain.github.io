@@ -4,6 +4,7 @@ metadata:
   name: demo-flink-job
   namespace: emr-on-eks-demo
 spec:
+  image: flink:1.17
   serviceAccount: emr-containers-sa-flink-operator
   flinkConfiguration:
     taskmanager.numberOfTaskSlots: "1"
