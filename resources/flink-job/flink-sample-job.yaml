@@ -11,8 +11,6 @@ spec:
     taskmanager.numberOfTaskSlots: "2"
     state.savepoints.dir: file:///flink/data/checkpoint/savepoints
     state.checkpoints.dir: file:///flink/data/checkpoint/checkpoints
-    high-availability: org.apache.flink.kubernetes.highavailability.KubernetesHaServicesFactory
-    high-availability.storageDir: file:///flink/data/checkpoint/ha
     job-result-store.storage-path: file:///flink/data/checkpoint/job-result-store
     kubernetes.operator.periodic.savepoint.interval: 1h # periodic savepoint triggering
     kubernetes.operator.deployment.rollback.enabled: "true"
