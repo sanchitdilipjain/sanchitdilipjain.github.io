@@ -8,7 +8,7 @@ spec:
   flinkVersion: v1_17
   emrReleaseLabel: "emr-6.15.0"
   flinkConfiguration:
-    taskmanager.numberOfTaskSlots: "2"
+    taskmanager.numberOfTaskSlots: "1"
     state.savepoints.dir: file:///flink/data/checkpoint/savepoints
     state.checkpoints.dir: file:///flink/data/checkpoint/checkpoints
     job-result-store.storage-path: file:///flink/data/checkpoint/job-result-store
@@ -52,7 +52,7 @@ spec:
             path: /local1
             type: Directory
   jobManager:
-    storageDir: file:///flink/data/checkpoint/ha
+    highAvailabilityEnabled: false
     resource:
       memory: "2048m"
       cpu: 1
@@ -63,5 +63,5 @@ spec:
       cpu: 1
   job:
     jarURI: local:///opt/flink/examples/streaming/StateMachineExample.jar
-    parallelism: 2
+    parallelism: 1
     upgradeMode: stateless # last-state
