@@ -1,18 +1,14 @@
 apiVersion: flink.apache.org/v1beta1
 kind: FlinkDeployment
 metadata:
-  name: demo-flink-job
-  namespace: emr-on-eks-demo
+  name: basic-example
 spec:
   image: flink:1.17
-  serviceAccount: emr-containers-sa-flink-operator
-  flinkConfiguration:
-    taskmanager.numberOfTaskSlots: "1"
   flinkVersion: v1_17
-  emrReleaseLabel: "emr-6.15.0"
+  flinkConfiguration:
+    taskmanager.numberOfTaskSlots: "2"
+  serviceAccount: flink
   jobManager:
-    highAvailabilityEnabled: false
-    replicas: 1
     resource:
       memory: "2048m"
       cpu: 1
@@ -22,5 +18,5 @@ spec:
       cpu: 1
   job:
     jarURI: local:///opt/flink/examples/streaming/StateMachineExample.jar
-    parallelism: 1
+    parallelism: 2
     upgradeMode: stateless
