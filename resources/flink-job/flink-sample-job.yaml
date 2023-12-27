@@ -43,7 +43,7 @@ spec:
         - name: flink-ssd-volume
           hostPath:
             path: /local1
-            type: Directory
+            type: DirectoryOrCreate
   jobManager:
     highAvailabilityEnabled: false
     replicas: 1
