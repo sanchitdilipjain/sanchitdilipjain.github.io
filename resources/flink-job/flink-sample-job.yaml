@@ -15,6 +15,7 @@ spec:
     kubernetes.operator.periodic.savepoint.interval: 1h # periodic savepoint triggering
     env.log.dir: "/flink/data/log"
     env.taskmanager.tmp.dirs: "/flink/data/tmp"
+  serviceAccount: emr-containers-sa-flink-operator
   podTemplate:
     apiVersion: v1
     kind: Pod
