@@ -28,5 +28,4 @@ spec:
   job:
     jarURI: local:///opt/flink/examples/streaming/StateMachineExample.jar
     parallelism: 1
-    upgradeMode: savepoint
-    savepointTriggerNonce: 0
+    upgradeMode: stateless
