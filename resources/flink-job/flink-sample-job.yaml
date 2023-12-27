@@ -4,6 +4,7 @@ metadata:
   name: demo-flink-job
   namespace: emr-on-eks-demo
 spec:
+  serviceAccount: emr-containers-sa-flink-operator
   flinkConfiguration:
     taskmanager.numberOfTaskSlots: "1"
     state.savepoints.dir: file:///flink/data/checkpoint/savepoints
