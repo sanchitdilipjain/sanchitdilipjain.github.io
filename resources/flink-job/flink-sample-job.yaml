@@ -62,5 +62,5 @@ spec:
       cpu: 1
   job:
     jarURI: local:///opt/flink/examples/streaming/StateMachineExample.jar
-    parallelism: 1
+    parallelism: 2
     upgradeMode: stateless # last-state
