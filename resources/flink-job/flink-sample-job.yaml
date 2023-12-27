@@ -4,15 +4,10 @@ metadata:
   name: demo-flink-job
   namespace: emr-on-eks-demo
 spec:
+  image: flink:1.17
   serviceAccount: emr-containers-sa-flink-operator
   flinkConfiguration:
     taskmanager.numberOfTaskSlots: "1"
-    state.savepoints.dir: file:///flink/data/checkpoint/savepoints
-    state.checkpoints.dir: file:///flink/data/checkpoint/checkpoints
-    job-result-store.storage-path: file:///flink/data/checkpoint/job-result-store
-    kubernetes.operator.periodic.savepoint.interval: 1h # periodic savepoint triggering
-    env.log.dir: "/flink/data/log"
-    env.taskmanager.tmp.dirs: "/flink/data/tmp"
   flinkVersion: v1_17
   emrReleaseLabel: "emr-6.15.0"
   jobManager:
