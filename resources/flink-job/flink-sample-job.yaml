@@ -4,9 +4,6 @@ metadata:
   name: demo-flink-job
   namespace: emr-on-eks-demo
 spec:
-  image: flink:1.17
-  flinkVersion: v1_17
-  emrReleaseLabel: "emr-6.15.0"
   flinkConfiguration:
     taskmanager.numberOfTaskSlots: "1"
     state.savepoints.dir: file:///flink/data/checkpoint/savepoints
@@ -15,35 +12,8 @@ spec:
     kubernetes.operator.periodic.savepoint.interval: 1h # periodic savepoint triggering
     env.log.dir: "/flink/data/log"
     env.taskmanager.tmp.dirs: "/flink/data/tmp"
-  serviceAccount: emr-containers-sa-flink-operator
-  podTemplate:
-    apiVersion: v1
-    kind: Pod
-    metadata:
-      name: pod-template
-    spec:
-      initContainers:
-        - name: flink-ssd-volume-permissions
-          image: public.ecr.aws/y4g4v0z7/busybox
-          command: [ 'sh', '-c', 'chown -R 9999 /tmp' ]
-          volumeMounts:
-            - mountPath: /tmp
-              name: flink-ssd-volume
-      containers:
-        # Do not change the main container name
-        - name: flink-main-container
-          volumeMounts:
-            - mountPath: /flink/data/checkpoint
-              name: flink-ssd-volume
-            - mountPath: /flink/data/tmp
-              name: flink-ssd-volume
-            - mountPath: /flink/data/log
-              name: flink-ssd-volume
-      volumes:
-        - name: flink-ssd-volume
-          hostPath:
-            path: /tmp
-            type: Directory
+  flinkVersion: v1_17
+  emrReleaseLabel: "emr-6.15.0"
   jobManager:
     highAvailabilityEnabled: false
     replicas: 1
@@ -57,4 +27,5 @@ spec:
   job:
     jarURI: local:///opt/flink/examples/streaming/StateMachineExample.jar
     parallelism: 1
-    upgradeMode: stateless # last-state
+    upgradeMode: savepoint
+    savepointTriggerNonce: 0
