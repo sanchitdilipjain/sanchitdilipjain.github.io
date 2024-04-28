@@ -1,0 +1,281 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width"><script type=application/javascript src=https://sanchitdilipjain.github.io/js/theme-mode.js></script><link rel=stylesheet href=https://sanchitdilipjain.github.io/css/frameworks.min.css><link rel=stylesheet href=https://sanchitdilipjain.github.io/css/github.min.css><link rel=stylesheet href=https://sanchitdilipjain.github.io/css/github-style.css><link rel=stylesheet href=https://sanchitdilipjain.github.io/css/light.css><link rel=stylesheet href=https://sanchitdilipjain.github.io/css/dark.css><link rel=stylesheet href=https://sanchitdilipjain.github.io/css/syntax.css><title>Amazon Redshift ML - Overview 🔍 - Sanchit's blog</title>
+<link rel=icon type=image/x-icon href=https://sanchitdilipjain.github.io/images/github.png><meta name=theme-color content="#1e2327"><meta name=description content="Never become so much of an expert that you stop gaining expertise. View life as a continuous learning experience."><meta name=robots content="noodp"><link rel=canonical href=https://sanchitdilipjain.github.io/post/amazon-rs-serverless-ml/><meta name=twitter:card content="summary"><meta name=twitter:title content="Sanchit's Blog"><meta name=twitter:description content="Amazon Redshift ML - Overview Introduction
+Amazon Redshift ML makes it easy for data analysts and database developers to create, train, and apply machine learning models using familiar SQL commands in Amazon Redshift data warehouses.
+With Redshift ML, you can take advantage of Amazon SageMaker, a fully managed machine learning service, without learning new tools or languages. Simply use SQL statements to create and train Amazon SageMaker machine learning models using your Redshift data and then use these models to make predictions."><meta name=twitter:site content="https://sanchitdilipjain.github.io/"><meta name=twitter:creator content="Sanchit Jain"><meta name=twitter:image content="https://sanchitdilipjain.github.io//images/preview.png"><meta property="og:type" content="article"><meta property="og:title" content="Sanchit's Blog"><meta property="og:description" content="Never become so much of an expert that you stop gaining expertise. View life as a continuous learning experience."><meta property="og:url" content="https://sanchitdilipjain.github.io/"><meta property="og:site_name" content="Sanchit's Blog"><meta property="og:image" content="https://sanchitdilipjain.github.io//images/preview.png"><meta property="og:image:type" content="image/png"><meta name=thumbnail content="https://sanchitdilipjain.github.io//images/preview.png"><meta name=author content="Sanchit Jain"><meta property="article:published_time" content="2024-01-15 12:00:00 +0000 UTC"><script async src="https://www.googletagmanager.com/gtag/js?id=G-63LNCKX5VR"></script><script>if(navigator.doNotTrack!=="1"){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-63LNCKX5VR")}</script></head><body><style>.height-limitation{max-height:300px;overflow-y:scroll}.loader{border:4px solid #f3f3f3;border-bottom:4px solid var(--color-fg-muted);border-radius:50%;width:30px;height:30px;animation:spin 1s linear infinite;margin:0 auto}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style><div style=position:relative><header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on"><div class="Header-item mobile-none" style=margin-top:-4px;margin-bottom:-4px><a class=Header-link href=https://sanchitdilipjain.github.io/><svg class="octicon" height="32" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58.0.0 3.58.0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38.0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95.0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12.0.0.67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15.0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48.0 1.07-.01 1.93-.01 2.2.0.21.15.46.55.38A8.013 8.013.0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div><div class="Header-item d-md-none"><button class="Header-link btn-link js-details-target" type=button onclick='document.querySelector("#header-search").style.display=document.querySelector("#header-search").style.display=="none"?"block":"none"'><svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M1 2.75A.75.75.0 011.75 2h12.5a.75.75.0 110 1.5H1.75A.75.75.0 011 2.75zm0 5A.75.75.0 011.75 7h12.5a.75.75.0 110 1.5H1.75A.75.75.0 011 7.75zM1.75 12a.75.75.0 100 1.5h12.5a.75.75.0 100-1.5H1.75z"/></svg></button></div><div style=display:none id=header-search class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex"><div class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to"><div class=position-relative><form target=_blank action=https://www.google.com/search accept-charset=UTF-8 method=get autocomplete=off><label class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center"><input type=text class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" name=q placeholder=Search autocomplete=off>
+<input type=hidden name=q value=site:https://sanchitdilipjain.github.io/><div class="js-jump-to-suggestions-container jump-to-suggestions overflow-hidden position-absolute"><div id=search-progress class="d-none color-bg-primary no-underline p-2" role=progress aria-selected=false><div class=loader></div></div><ul id=jump-to-results role=listbox class="Box border-0 p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container js-active-navigation-container height-limitation"></ul></div></label></form></div></div></div><div class="Header-item Header-item--full flex-justify-center d-md-none position-relative"><a class=Header-link href=https://sanchitdilipjain.github.io/><svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58.0.0 3.58.0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38.0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95.0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12.0.0.67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15.0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48.0 1.07-.01 1.93-.01 2.2.0.21.15.46.55.38A8.013 8.013.0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div><div class=Header-item style=margin-right:0><a href=javascript:void(0) class="Header-link no-select" onclick=switchTheme()><svg style="fill:var(--color-profile-color-modes-toggle-moon)" class="no-select" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.52208 7.71754c3.05612.0 5.53362-2.47748 5.53362-5.5336C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961 9.95801 1.07727 10.3495.771159 10.6474.99992c1.4679 1.12724 2.4141 2.90007 2.4141 4.89391.0 3.40575-2.7609 6.16667-6.16665 6.16667-2.94151.0-5.40199-2.0595-6.018122-4.81523C.794841 6.87902 1.23668 6.65289 1.55321 6.85451 2.41106 7.40095 3.4296 7.71754 4.52208 7.71754z"/></svg></a></div></header></div><div><main><div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4"><div class=px-0><div class="mb-3 d-flex px-3 px-md-3 px-lg-5"><div class="flex-auto min-width-0 width-fit mr-3"><div class=d-flex><div class="d-none d-md-block"><a class="avatar mr-2 flex-shrink-0" href=https://sanchitdilipjain.github.io/><img class=avatar-user src=https://sanchitdilipjain.github.io/images/avatar.png width=32 height=32></a></div><div class="d-flex flex-column"><h1 class="break-word f3 text-normal mb-md-0 mb-1"><span class=author><a href=https://sanchitdilipjain.github.io/>Sanchit Dilip Jain</a></span><span class=path-divider>/</span><strong class="css-truncate-target mr-1" style=max-width:410px><a href=https://sanchitdilipjain.github.io/post/amazon-rs-serverless-ml/>Amazon Redshift ML - Overview 🔍</a></strong></h1><div class="note m-0">Created <relative-time datetime="Mon, 15 Jan 2024 12:00:00 +0000" class=no-wrap>Mon, 15 Jan 2024 12:00:00 +0000</relative-time>
+<span class=file-info-divider></span>
+Modified <relative-time datetime="Sun, 28 Apr 2024 17:44:43 +0000" class=no-wrap>Sun, 28 Apr 2024 17:44:43 +0000</relative-time></div></div></div></div></div></div></div><div class="container-lg px-3 new-discussion-timeline"><div class="repository-content gist-content"><div><div class="js-gist-file-update-container js-task-list-container file-box"><div id=file-pytest class="file my-2"><div id=post-header class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style=z-index:2><div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto"><div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0"><summary id=toc-toggle onclick=clickToc() class="btn btn-octicon m-0 mr-2 p-2"><svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered"><path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75.0 000 1.5h8.5a.75.75.0 000-1.5h-8.5zm0 5a.75.75.0 000 1.5h8.5a.75.75.0 000-1.5h-8.5zm0 5a.75.75.0 000 1.5h8.5a.75.75.0 000-1.5h-8.5zM3 8A1 1 0 111 8a1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"/></svg></summary><details-menu class=SelectMenu id=toc-details style="display: none;"><div class="SelectMenu-modal rounded-3 mt-1" style=max-height:340px><div class="SelectMenu-list SelectMenu-list--borderless p-2" style=overscroll-behavior:contain id=toc-list></div></div></details-menu>1669 Words
+<span class=file-info-divider></span>
+8 min</div></div></div><div class="Box-body px-5 pb-5" style=z-index:1><article class="markdown-body entry-content container-lg"><h2 id=amazon-redshift-ml---overview>Amazon Redshift ML - Overview</h2><p><strong>Introduction</strong></p><ul><li><p>Amazon Redshift ML makes it easy for data analysts and database developers to create, train, and apply machine learning models using familiar SQL commands in Amazon Redshift data warehouses.</p></li><li><p>With Redshift ML, you can take advantage of Amazon SageMaker, a fully managed machine learning service, without learning new tools or languages. Simply use SQL statements to create and train Amazon SageMaker machine learning models using your Redshift data and then use these models to make predictions.</p></li><li><p>Imagine using customer retention data in Redshift to train a churn detection model. Then, applying that model to your dashboards, empowering your marketing team to offer incentives to customers at risk of churning. This is just one practical example of how Redshift ML can transform your work.</p></li><li><p>Redshift ML makes the model available as an SQL function within your Redshift data warehouse so you can easily apply it directly in your queries and reports.</p><ul><li>No prior ML experience needed</li><li>Use ML on your Redshift data using standard SQL</li><li>Predictive analytics with Amazon Redshift</li><li>Bring your own model (BYOM)</li></ul><p><img src=https://sanchitdilipjain.github.io/images/amazon-rs-serverless-demo/image1.png alt></p></li></ul><p><strong>Demo</strong></p><p><strong>1. Prerequisites</strong></p><ul><li><p><strong>Objective:</strong> In this demo, we will perform some prerequisites via provisioning an AWS Cloudformation.</p></li><li><p>Below are the steps to perform provisioning an AWS Cloudformation</p><ul><li>Download the Cloudformation from this <a href=https://sanchitdilipjain.github.io/images/amazon-rs-serverless-demo/redshift-serverless.yaml>URL</a></li><li>Visit <a href=https://console.aws.amazon.com/cloudformation/>AWS Cloudformation console</a>, upload the CloudFormation template and click on Launch Stack.</li><li>The CloudFormation stack will create the necessary resources required for the demo. Check the CloudFormation console and wait for the status CREATE_COMPLETE as shown below</li></ul><p><img src=https://sanchitdilipjain.github.io/images/amazon-rs-serverless-demo/image2.png alt></p></li></ul><p><strong>2. Load data</strong></p><ul><li><p>On the Redshift Serverless dashboard, navigate to the namespace starting with zero-etl-destination-* namespace.</p></li><li><p>Choose Query data to open Query Editor v2.</p><p><img src=https://sanchitdilipjain.github.io/images/amazon-rs-serverless-demo/image3.png alt></p></li><li><p>Click on the namespace name to open the connection dialog</p></li><li><p>Connect to the Redshift Serverless data warehouse by choosing Create connection.</p><p><img src=https://sanchitdilipjain.github.io/images/amazon-rs-serverless-demo/image4.png alt></p></li><li><p>Lets create and load data into a transaction history table with the following SQL command:</p><pre tabindex=0><code>CREATE TABLE cust_payment_tx_history
+(
+    TRANSACTION_ID integer,
+    TX_DATETIME timestamp,
+    CUSTOMER_ID integer,
+    TERMINAL_ID integer,
+    TX_AMOUNT decimal(9,2),
+    TX_TIME_SECONDS integer,
+    TX_TIME_DAYS integer,
+    TX_FRAUD integer,
+    TX_FRAUD_SCENARIO integer,
+    TX_DURING_WEEKEND integer,
+    TX_DURING_NIGHT integer,
+    CUSTOMER_ID_NB_TX_1DAY_WINDOW decimal(9,2),
+    CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW decimal(9,2),
+    CUSTOMER_ID_NB_TX_7DAY_WINDOW decimal(9,2),
+    CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW decimal(9,2),
+    CUSTOMER_ID_NB_TX_30DAY_WINDOW decimal(9,2),
+    CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW decimal(9,2),
+    TERMINAL_ID_NB_TX_1DAY_WINDOW decimal(9,2),
+    TERMINAL_ID_RISK_1DAY_WINDOW decimal(9,2),
+    TERMINAL_ID_NB_TX_7DAY_WINDOW decimal(9,2),
+    TERMINAL_ID_RISK_7DAY_WINDOW decimal(9,2),
+    TERMINAL_ID_NB_TX_30DAY_WINDOW decimal(9,2),
+    TERMINAL_ID_RISK_30DAY_WINDOW decimal(9,2)
+);
+
+COPY cust_payment_tx_history
+FROM &#39;s3://redshift-demos/ri2023/ant307/data/cust_payment_tx_history/&#39;
+IAM_ROLE default
+PARQUET;
+</code></pre></li><li><p>Now check how many transactions have been loaded:</p><pre tabindex=0><code>SELECT count(1) FROM cust_payment_tx_history;
+</code></pre></li><li><p>Then check the monthly fraud and non fraud transactions trend:</p><pre tabindex=0><code>SELECT 
+    to_char(tx_datetime, &#39;YYYYMM&#39;) AS YearMonth,
+    sum(case when tx_fraud=1 then 1 else 0 end) AS fraud_tx,
+    sum(case when tx_fraud=0 then 1 else 0 end) AS non_fraud_tx,
+    count(*) AS total_tx
+FROM cust_payment_tx_history
+GROUP BY YearMonth;
+</code></pre></li><li><p>Amazon Redshift ML enables you to train models with one single SQL CREATE MODEL command. The CREATE MODEL method creates a model that Amazon Redshift uses to generate model-based predictions with familiar SQL constructs.</p></li><li><p>In this demo, we will use CREATE MODEL to train and test a model on our historical card transaction table. We split this data into training and test datasets. Transactions from 2022-04-01 to 2022-07-31 are for the training set, and transactions from 2022-08-01 to 2022-09-30 are used for the test set.</p><pre tabindex=0><code>CREATE MODEL cust_cc_txn_fd
+FROM (
+    SELECT 
+        TX_AMOUNT ,
+        TX_FRAUD ,
+        TX_DURING_WEEKEND ,
+        TX_DURING_NIGHT ,
+        CUSTOMER_ID_NB_TX_1DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW ,
+        CUSTOMER_ID_NB_TX_7DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW ,
+        CUSTOMER_ID_NB_TX_30DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_1DAY_WINDOW ,
+        TERMINAL_ID_RISK_1DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_7DAY_WINDOW ,
+        TERMINAL_ID_RISK_7DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_30DAY_WINDOW ,
+        TERMINAL_ID_RISK_30DAY_WINDOW
+    FROM cust_payment_tx_history
+    WHERE cast(tx_datetime as date) BETWEEN &#39;2022-06-01&#39; AND &#39;2022-09-30&#39;
+) 
+TARGET tx_fraud
+FUNCTION fn_customer_cc_fd
+IAM_ROLE default
+AUTO OFF
+MODEL_TYPE XGBOOST
+OBJECTIVE &#39;binary:logistic&#39;
+PREPROCESSORS &#39;none&#39;
+HYPERPARAMETERS DEFAULT EXCEPT (NUM_ROUND &#39;100&#39;)
+SETTINGS (
+    S3_BUCKET &#39;&lt;replace this with your s3 bucket name&gt;&#39;,
+    S3_GARBAGE_COLLECT off,
+    MAX_RUNTIME 1200
+);
+</code></pre></li><li><p>The ML model is called Cust_cc_txn_fd, and the prediction function is fn_customer_cc_fd. The FROM clause shows the input columns from the historical table public.cust_payment_tx_history.</p></li><li><p>The target parameter is set to tx_fraud, which is the target variable that we’re trying to predict. IAM_Role is set to default because the cluster is configured with this role; if not, you have to provide your Amazon Redshift cluster IAM role ARN.</p></li><li><p>During training, &ldquo;Model State&rdquo; is set to &ldquo;TRAINING.&rdquo; When &ldquo;Model State&rdquo; shows as &ldquo;READY,&rdquo; it means the model is trained and deployed.</p><pre tabindex=0><code>SHOW MODEL cust_cc_txn_fd;
+</code></pre></li><li><p>Let’s test this model with the test dataset. Run the following command, which retrieves sample predictions:</p><pre tabindex=0><code>SELECT
+    tx_fraud ,
+    fn_customer_cc_fd(
+        TX_AMOUNT ,
+        TX_DURING_WEEKEND ,
+        TX_DURING_NIGHT ,
+        CUSTOMER_ID_NB_TX_1DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW ,
+        CUSTOMER_ID_NB_TX_7DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW ,
+        CUSTOMER_ID_NB_TX_30DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_1DAY_WINDOW ,
+        TERMINAL_ID_RISK_1DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_7DAY_WINDOW ,
+        TERMINAL_ID_RISK_7DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_30DAY_WINDOW ,
+        TERMINAL_ID_RISK_30DAY_WINDOW
+    )
+FROM cust_payment_tx_history
+WHERE cast(tx_datetime as date) &gt;= &#39;2022-10-01&#39;
+LIMIT 10;
+</code></pre></li></ul><p><img src=https://sanchitdilipjain.github.io/images/amazon-rs-serverless-demo/image5.png alt></p><ul><li><p>We see that some values are matching and some are not. Let’s compare predictions to the ground truth:</p><pre tabindex=0><code>SELECT
+    tx_fraud ,
+    fn_customer_cc_fd(
+        TX_AMOUNT ,
+        TX_DURING_WEEKEND ,
+        TX_DURING_NIGHT ,
+        CUSTOMER_ID_NB_TX_1DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW ,
+        CUSTOMER_ID_NB_TX_7DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW ,
+        CUSTOMER_ID_NB_TX_30DAY_WINDOW ,
+        CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_1DAY_WINDOW ,
+        TERMINAL_ID_RISK_1DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_7DAY_WINDOW ,
+        TERMINAL_ID_RISK_7DAY_WINDOW ,
+        TERMINAL_ID_NB_TX_30DAY_WINDOW ,
+        TERMINAL_ID_RISK_30DAY_WINDOW
+    ) AS prediction, 
+    count(*) AS values
+FROM public.cust_payment_tx_history
+WHERE cast(tx_datetime as date) &gt;= &#39;2022-08-01&#39;
+GROUP BY 1,2;
+</code></pre></li></ul><p><img src=https://sanchitdilipjain.github.io/images/amazon-rs-serverless-demo/image6.png alt></p><ul><li><p>We validated that the model is working and the F1 score is good.</p></li><li><p>Create the first view, which aggregates streaming data at the customer level:</p><pre tabindex=0><code>CREATE VIEW public.customer_transformations
+AS SELECT 
+    customer_id, 
+    CUSTOMER_ID_NB_TX_1DAY_WINDOW, 
+    CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW,
+    CUSTOMER_ID_NB_TX_7DAY_WINDOW,
+    CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW,
+    CUSTOMER_ID_NB_TX_30DAY_WINDOW, 
+    CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW
+FROM (
+    SELECT 
+        customer_id,
+        SUM(CASE WHEN cast(a.TX_DATETIME AS date) = cast(getdate() AS date) THEN TX_AMOUNT  ELSE 0 end) AS CUSTOMER_ID_NB_TX_1DAY_WINDOW,
+        AVG(CASE WHEN cast(a.TX_DATETIME AS date) = cast(getdate() AS date) THEN TX_AMOUNT ELSE 0 end ) AS CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW,
+        SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -7 AND cast(getdate() AS date) THEN TX_AMOUNT ELSE 0 end) AS CUSTOMER_ID_NB_TX_7DAY_WINDOW,
+        AVG(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -7 AND cast(getdate() AS date) THEN TX_AMOUNT  ELSE 0 end ) AS CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW,
+        SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -30 AND cast(getdate() AS date) THEN TX_AMOUNT ELSE 0 end) AS CUSTOMER_ID_NB_TX_30DAY_WINDOW,
+        AVG( CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -30 AND cast(getdate() AS date) THEN TX_AMOUNT  ELSE 0 end ) AS CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW
+    FROM (
+        SELECT 
+            CUSTOMER_ID, 
+            TERMINAL_ID, 
+            TX_AMOUNT, 
+            cast(TX_DATETIME AS timestamp) TX_DATETIME
+        FROM CUST_PAYMENT_TX_STREAM  --retrieve streaming data
+        WHERE cast(TX_DATETIME AS date) BETWEEN cast(getdate() AS date) -37 AND cast(getdate() AS date)
+        UNION
+        SELECT 
+            CUSTOMER_ID, 
+            TERMINAL_ID, 
+            TX_AMOUNT,
+            cast(TX_DATETIME AS timestamp) TX_DATETIME
+        FROM cust_payment_tx_history   -- retrieve historical data
+        WHERE  cast(TX_DATETIME AS date) BETWEEN cast(getdate() AS date) -37 AND cast(getdate() AS date)
+    ) a
+GROUP BY 1
+);
+</code></pre></li><li><p>Then create the second view, which aggregates streaming data at terminal level:</p><pre tabindex=0><code>CREATE VIEW public.terminal_transformations
+AS SELECT 
+    TERMINAL_ID,
+    TERMINAL_ID_NB_TX_1DAY_WINDOW, 
+    TERMINAL_ID_RISK_1DAY_WINDOW, 
+    TERMINAL_ID_NB_TX_7DAY_WINDOW, 
+    TERMINAL_ID_RISK_7DAY_WINDOW,
+    TERMINAL_ID_NB_TX_30DAY_WINDOW, 
+    TERMINAL_ID_RISK_30DAY_WINDOW
+FROM (
+    SELECT 
+    TERMINAL_ID, 
+    MAX(cast(a.TX_DATETIME AS date) ) maxdt, 
+    MIN(cast(a.TX_DATETIME AS date) ) mindt, 
+    MAX(tx_fraud) mxtf, 
+    MIN(tx_fraud) mntf, 
+    SUM(CASE WHEN tx_fraud =1 THEN 1 ELSE 0 end) sumtxfraud,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -7 AND cast(getdate() AS date)  AND tx_fraud = 1 THEN tx_fraud ELSE 0 end) AS NB_FRAUD_DELAY1,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -7 AND cast(getdate() AS date) THEN tx_fraud ELSE 0 end)  AS NB_TX_DELAY1 ,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -8 AND cast(getdate() AS date)  AND tx_fraud = 1 THEN tx_fraud ELSE 0 end) AS NB_FRAUD_DELAY_WINDOW1,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -8 AND cast(getdate() AS date) THEN 1 ELSE 0 end)  AS NB_TX_DELAY_WINDOW1,
+    NB_FRAUD_DELAY_WINDOW1-NB_FRAUD_DELAY1 AS NB_FRAUD_WINDOW1,
+    NB_TX_DELAY_WINDOW1-NB_TX_DELAY1 AS TERMINAL_ID_NB_TX_1DAY_WINDOW,
+    CASE WHEN TERMINAL_ID_NB_TX_1DAY_WINDOW = 0 
+        THEN 0 
+        ELSE NB_FRAUD_WINDOW1 / TERMINAL_ID_NB_TX_1DAY_WINDOW  
+    end AS terminal_id_risk_1day_window ,--7 day
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -7 AND cast(getdate() AS date) AND tx_fraud = 1 THEN tx_fraud ELSE 0 end ) AS NB_FRAUD_DELAY7,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -7 AND cast(getdate() AS date) THEN 1 ELSE 0 end)  AS NB_TX_DELAY7,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -14 AND cast(getdate() AS date)  AND tx_fraud = 1 THEN tx_fraud ELSE 0 end) AS NB_FRAUD_DELAY_WINDOW7,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date) -14 AND cast(getdate() AS date) THEN 1 ELSE 0 end)  AS NB_TX_DELAY_WINDOW7,
+    NB_FRAUD_DELAY_WINDOW7-NB_FRAUD_DELAY7 AS NB_FRAUD_WINDOW7,
+    NB_TX_DELAY_WINDOW7-NB_TX_DELAY7 AS TERMINAL_ID_NB_TX_7DAY_WINDOW,
+    CASE WHEN TERMINAL_ID_NB_TX_7DAY_WINDOW = 0 
+        THEN 0 
+        ELSE NB_FRAUD_WINDOW7 / TERMINAL_ID_NB_TX_7DAY_WINDOW 
+    END AS terminal_id_risk_7day_window, --30 day period
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date)-7 AND cast(getdate() AS date)  AND tx_fraud = 1 THEN tx_fraud ELSE 0 end) AS NB_FRAUD_DELAY30,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date)-7 AND cast(getdate() AS date) THEN 1 ELSE 0 end)  AS NB_TX_DELAY30,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date)-37 AND cast(getdate() AS date)  AND tx_fraud = 1 THEN tx_fraud ELSE 0 end) AS NB_FRAUD_DELAY_WINDOW30,
+    SUM(CASE WHEN cast(a.TX_DATETIME AS date) BETWEEN  cast(getdate() AS date)-37 AND cast(getdate() AS date) THEN 1 ELSE 0 end)  AS NB_TX_DELAY_WINDOW30,
+    NB_FRAUD_DELAY_WINDOW30-NB_FRAUD_DELAY30 AS NB_FRAUD_WINDOW30,
+    NB_TX_DELAY_WINDOW30-NB_TX_DELAY30 AS TERMINAL_ID_NB_TX_30DAY_WINDOW,
+    CASE WHEN TERMINAL_ID_NB_TX_30DAY_WINDOW = 0 
+        THEN 0 
+        ELSE NB_FRAUD_WINDOW30 / TERMINAL_ID_NB_TX_30DAY_WINDOW 
+    END AS TERMINAL_ID_RISK_30DAY_WINDOW
+    FROM(
+        SELECT 
+            TERMINAL_ID, 
+            TX_AMOUNT, 
+            cast(TX_DATETIME AS timestamp) TX_DATETIME, 
+            0 AS TX_FRAUD
+        FROM cust_payment_tx_stream
+        WHERE cast(TX_DATETIME AS date) BETWEEN cast(getdate() AS date) -37 AND cast(getdate() AS date)
+        UNION ALL
+        SELECT  
+            TERMINAL_ID,
+            TX_AMOUNT,
+            TX_DATETIME,
+            TX_FRAUD
+        FROM cust_payment_tx_history  
+        WHERE cast(TX_DATETIME AS date) BETWEEN cast(getdate() AS date) -37 AND cast(getdate() AS date)
+    ) a
+GROUP BY 1
+);
+</code></pre></li><li><p>Create the third view, which combines incoming transactional data with customer and terminal aggregated data and calls the prediction function all in one place:</p><pre tabindex=0><code>CREATE VIEW public.cust_payment_tx_fraud_predictions
+AS SELECT
+    A.APPROXIMATE_ARRIVAL_TIMESTAMP,
+    D.FULL_NAME, 
+    D.EMAIL_ADDRESS, 
+    D.PHONE_NUMBER,
+    A.TRANSACTION_ID, 
+    A.TX_DATETIME, 
+    A.CUSTOMER_ID, 
+    A.TERMINAL_ID,
+    A.TX_AMOUNT ,
+    A.TX_TIME_SECONDS ,
+    A.TX_TIME_DAYS ,
+    fn_customer_cc_fd(
+        A.TX_AMOUNT ,
+        A.TX_DURING_WEEKEND,
+        A.TX_DURING_NIGHT,
+        C.CUSTOMER_ID_NB_TX_1DAY_WINDOW ,
+        C.CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW ,
+        C.CUSTOMER_ID_NB_TX_7DAY_WINDOW ,
+        C.CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW ,
+        C.CUSTOMER_ID_NB_TX_30DAY_WINDOW ,
+        C.CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW ,
+        T.TERMINAL_ID_NB_TX_1DAY_WINDOW ,
+        T.TERMINAL_ID_RISK_1DAY_WINDOW ,
+        T.TERMINAL_ID_NB_TX_7DAY_WINDOW ,
+        T.TERMINAL_ID_RISK_7DAY_WINDOW ,
+        T.TERMINAL_ID_NB_TX_30DAY_WINDOW ,
+        T.TERMINAL_ID_RISK_30DAY_WINDOW
+    ) FRAUD_PREDICTION
+FROM(
+    SELECT
+        APPROXIMATE_ARRIVAL_TIMESTAMP,
+        TRANSACTION_ID, 
+        TX_DATETIME, 
+        CUSTOMER_ID, 
+        TERMINAL_ID,
+        TX_AMOUNT,
+        TX_TIME_SECONDS,
+        TX_TIME_DAYS,
+        CASE WHEN extract(dow from cast(TX_DATETIME as timestamp)) in (1,7) then 1 else 0 end as TX_DURING_WEEKEND,
+        CASE WHEN extract(hour from cast(TX_DATETIME as timestamp)) BETWEEN 00 and 06 then 1 else 0 end as TX_DURING_NIGHT
+    FROM public.cust_payment_tx_stream
+) a
+JOIN public.terminal_transformations t ON a.terminal_id = t.terminal_id
+JOIN public.customer_transformations c ON a.customer_id = c.customer_id
+JOIN postgres.customer_info d ON a.customer_id = d.customer_id
+WITH NO SCHEMA BINDING;
+</code></pre></li><li><p>Run a SELECT statement on the view:</p><pre tabindex=0><code>SELECT * FROM cust_payment_tx_fraud_predictions WHERE FRAUD_PREDICTION = 1;
+</code></pre></li></ul><p>As you run the SELECT statement repeatedly, the latest credit card transactions undergo transformations and ML predictions in near real-time.</p><p><strong>Resources</strong></p><ul><li>Visit this <a href=https://aws.amazon.com/redshift/features/redshift-ml/>page</a> to find the latest documentation.</li></ul></article></div></div></div></div></div><div class=pagination-nav><div class="pagination-button next-post"></div><div class="pagination-button previous-post"><a class="pagination-link link-reverse" href=https://sanchitdilipjain.github.io/post/aws-genai-dqm/>Taming the Data Beast: How GenAI Tackles Data...&nbsp;</a><div>»</div></div></div></div></main></div><script type=application/javascript src=https://sanchitdilipjain.github.io/js/toc.js></script><link rel=stylesheet href=https://sanchitdilipjain.github.io/css/toc.css><div class="footer container-xl width-full p-responsive"><div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light"><a aria-label=Homepage title=GitHub class="footer-octicon d-none d-lg-block mr-lg-4" href=https://sanchitdilipjain.github.io/><svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58.0.0 3.58.0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38.0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95.0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12.0.0.67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15.0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48.0 1.07-.01 1.93-.01 2.2.0.21.15.46.55.38A8.013 8.013.0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0"><li class="mr-3 mr-lg-0"></li></ul></div><div class="d-flex flex-justify-center pb-6"><span class="f6 text-gray-light"></span></div></div></body><script type=application/javascript src=https://sanchitdilipjain.github.io/js/github-style.js></script><script src=https://sanchitdilipjain.github.io/js/mark.es6.min.js></script></html>

@@ -1,0 +1,110 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  DatabaseName:
+    Description: The name of the first database to be created when the cluster is created
+    Type: String
+    Default: dev
+    AllowedPattern: "([a-z]|[0-9])+"
+  AdminUsername:
+    Description: The user name that is associated with the admin user account for the cluster that is being created
+    Type: String
+    Default: awsuser
+    AllowedPattern: "([a-z])([a-z]|[0-9])*"
+  AdminPassword:
+    Description: The password that is associated with the admin user account for the cluster that is being created. Default is Awsuser123
+    Type: String
+    Default: Awsuser123
+    NoEcho: 'true'
+    MinLength: 8
+    MaxLength: 64
+    AllowedPattern: '^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^\x00-\x20\x22\x27\x2f\x40\x5c\x7f-\uffff]+'
+  BaseRPU:
+    Description: Base RPU for Redshift Serverless Workgroup.
+    Type: Number
+    MinValue: 8
+    MaxValue: 512
+    Default: 16
+  Subnet:
+    Description: Please provide subnet
+    Type: List<AWS::EC2::Subnet::Id>
+  SecurityGroup:
+    Description: Please provide security group
+    Type: String
+    Default: sg-033d93b4126d65079
+Resources:
+  RedshiftServerlessNS:
+    Type: 'AWS::RedshiftServerless::Namespace'
+    Properties:
+      AdminUsername:
+        Ref: AdminUsername
+      AdminUserPassword:
+        Ref: AdminPassword
+      DbName:
+        Ref: DatabaseName
+      NamespaceName:  !Sub
+          - 'zero-etl-destination-dw-ns-${RandomGUID}'
+          - { RandomGUID: !Select [0, !Split ["-", !Select [2, !Split ["/", !Ref AWS::StackId ]]]] }
+      IamRoles:
+        - !GetAtt 'ServiceRole.Arn'
+      DefaultIamRoleArn: !GetAtt 'ServiceRole.Arn'
+  RedshiftServerlessWG:
+    Type: 'AWS::RedshiftServerless::Workgroup'
+    Properties:
+      WorkgroupName: !Sub
+          - 'zero-etl-destination-dw-wg-${RandomGUID}'
+          - { RandomGUID: !Select [0, !Split ["-", !Select [2, !Split ["/", !Ref AWS::StackId ]]]] }
+      NamespaceName:  !Sub
+          - 'zero-etl-destination-dw-ns-${RandomGUID}'
+          - { RandomGUID: !Select [0, !Split ["-", !Select [2, !Split ["/", !Ref AWS::StackId ]]]] }
+      ConfigParameters:
+        - ParameterKey: enable_case_sensitive_identifier
+          ParameterValue: 'true'                    
+      BaseCapacity:
+        Ref: BaseRPU
+      PubliclyAccessible: 'false'
+      SubnetIds:
+        Ref: Subnet
+      SecurityGroupIds:
+        - Ref: SecurityGroup
+    DependsOn:
+      - RedshiftServerlessNS
+  RedshiftServerlessSecret:
+    Type: 'AWS::SecretsManager::Secret'
+    Properties:
+      Name: RedshiftServerlessSecret
+      Description: This secret is for Redshift Serverless 
+      SecretString: '{"username":"awsuser","password":"Awsuser123"}'
+  ServiceRole:
+    Type: AWS::IAM::Role
+    Properties :
+      RoleName: RedshiftIAMRole
+      AssumeRolePolicyDocument:
+        Version : 2012-10-17
+        Statement :
+          -
+            Effect : Allow
+            Principal :
+              Service :
+                - redshift-serverless.amazonaws.com
+            Action :
+              - sts:AssumeRole
+      Path : /
+      Policies:      
+        -
+          PolicyName: RedshiftSecretPermissions
+          PolicyDocument :
+            Version: 2012-10-17
+            Statement:
+              -
+                Effect: Allow
+                Action:
+                  - secretsmanager:GetResourcePolicy
+                  - secretsmanager:GetSecretValue
+                  - secretsmanager:DescribeSecret
+                  - secretsmanager:ListSecretVersionIds
+                  - secretsmanager:GetRandomPassword
+                  - secretsmanager:ListSecrets                  
+                Resource: "*"     
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+        - arn:aws:iam::aws:policy/AmazonRedshiftFullAccess
