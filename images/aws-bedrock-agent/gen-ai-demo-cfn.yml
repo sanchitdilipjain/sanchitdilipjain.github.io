@@ -67,10 +67,10 @@ Resources:
               if api_path == "/get_num_records":
                   s3 = boto3.client("s3")
                   s3.download_file(S3_BUCKET, S3_OBJECT, "/tmp/data.csv")
-                  df = pandas.read_csv("/tmp/data,csv")
+                  df = pandas.read_csv("/tmp/data.csv")
 
                   # Get count of dataframe
-                  count = length(df)
+                  count = len(df)
 
                   response_body = {"application/json": {"body": str(count)}}
                   response_code = 200
@@ -96,6 +96,7 @@ Resources:
               api_response = {"messageVersion": "1.0", "response": action_response}
 
               return api_response
+
       Description: Return number of items in dataframe
       Handler: index.lambda_handler
       MemorySize: 512
