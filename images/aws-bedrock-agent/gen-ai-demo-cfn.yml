@@ -106,4 +106,4 @@ Resources:
       Environment:
         Variables:
           S3_BUCKET: !Ref S3Bucket
-          S3_OBJECT: "" 
+          S3_OBJECT: "sample_click_stream_data.csv" 
