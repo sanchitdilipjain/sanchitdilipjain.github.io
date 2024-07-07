@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources: 
+  ExecutionRole:
+    Type: "AWS::IAM::Role"
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - "sts:AssumeRole"
+      Path: /
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
+  DataAnalysisFunc:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: data-analysis-function
+      Code:
+        ZipFile: |
+          import os
+          import json
+          import boto3
+
+          message = os.environ["message"]
+
+          def lambda_handler(event, context):
+          return {"message": message}
+      Description: Return the message from environment variable
+      Handler: index.lambda_handler
+      MemorySize: 512
+      Role: !GetAtt ExecutionRole.Arn
+      Runtime: python3.11
+      Timeout: 3
