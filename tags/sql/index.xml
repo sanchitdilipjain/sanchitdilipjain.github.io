@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sql on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/sql/</link><description>Recent content in Sql on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml"/><item><title>Redshift Data Analysis with Generative SQL 🔍</title><link>https://sanchitdilipjain.github.io/post/rs-eda-genai/</link><pubDate>Sun, 07 Jul 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/rs-eda-genai/</guid><description>Redshift Data Analysis with Generative SQL What is Amazon Redshift Serverless?
-Amazon Redshift Serverless makes it convenient for you to run and scale analytics without having to provision and manage data warehouses. Amazon Redshift automatically provisions and scales data warehouse capacity to deliver fast performance for demanding and unpredictable workloads. You pay only for the capacity that you use. What is Amazon Q?
-Amazon Q generates code, tests, debugs, and has multistep planning and reasoning capabilities that can transform and implement new code generated from developer requests.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sql on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/sql/</link><description>Recent content in Sql on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml"/><item><title>Redshift Data Analysis with Generative SQL 🔍</title><link>https://sanchitdilipjain.github.io/post/rs-eda-genai/</link><pubDate>Sun, 07 Jul 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/rs-eda-genai/</guid><description>&lt;h2 id="redshift-data-analysis-with-generative-sql">Redshift Data Analysis with Generative SQL&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>What is Amazon Redshift Serverless?&lt;/p>
+&lt;ul>
+&lt;li>Amazon Redshift Serverless makes it convenient for you to run and scale analytics without having to provision and manage data warehouses.&lt;/li>
+&lt;li>Amazon Redshift automatically provisions and scales data warehouse capacity to deliver fast performance for demanding and unpredictable workloads. You pay only for the capacity that you use.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What is Amazon Q?&lt;/p>
+&lt;ul>
+&lt;li>Amazon Q generates code, tests, debugs, and has multistep planning and reasoning capabilities that can transform and implement new code generated from developer requests.&lt;/li>
+&lt;li>Amazon Q also makes it easier for employees to get answers to questions across business data such as company policies, product information, business results, code base, employees, and many other topics by connecting to enterprise data repositories to summarize the data logically, analyze trends, and engage in dialogue about the data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Demo&lt;/strong>&lt;/p></description></item></channel></rss>

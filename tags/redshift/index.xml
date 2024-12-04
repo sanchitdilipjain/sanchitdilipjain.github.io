@@ -1,18 +1,115 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redshift on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/redshift/</link><description>Recent content in Redshift on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/redshift/index.xml" rel="self" type="application/rss+xml"/><item><title>Redshift Data Analysis with Generative SQL 🔍</title><link>https://sanchitdilipjain.github.io/post/rs-eda-genai/</link><pubDate>Sun, 07 Jul 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/rs-eda-genai/</guid><description>Redshift Data Analysis with Generative SQL What is Amazon Redshift Serverless?
-Amazon Redshift Serverless makes it convenient for you to run and scale analytics without having to provision and manage data warehouses. Amazon Redshift automatically provisions and scales data warehouse capacity to deliver fast performance for demanding and unpredictable workloads. You pay only for the capacity that you use. What is Amazon Q?
-Amazon Q generates code, tests, debugs, and has multistep planning and reasoning capabilities that can transform and implement new code generated from developer requests.</description></item><item><title>Amazon Redshift ML - Overview 🔍</title><link>https://sanchitdilipjain.github.io/post/amazon-rs-serverless-ml/</link><pubDate>Mon, 15 Apr 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-rs-serverless-ml/</guid><description>Amazon Redshift ML - Overview Introduction
-Amazon Redshift ML makes it easy for data analysts and database developers to create, train, and apply machine learning models using familiar SQL commands in Amazon Redshift data warehouses.
-With Redshift ML, you can take advantage of Amazon SageMaker, a fully managed machine learning service, without learning new tools or languages. Simply use SQL statements to create and train Amazon SageMaker machine learning models using your Redshift data and then use these models to make predictions.</description></item><item><title>Monitoring and Security of Amazon Redshift DataShares 💡</title><link>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part4/</link><pubDate>Sat, 20 May 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part4/</guid><description>Monitoring and Security of Amazon Redshift DataShares Introduction
-What is Amazon Redshift Data Sharing?
-Amazon Redshift Data Sharing is a feature that enables Redshift cluster owners to share live data across different Amazon Redshift clusters, accounts, and regions. With data sharing, users can easily and securely share data with other Redshift users, without having to copy or move the data. What are Amazon Redshift Data Sharing Benefits?
-Data sharing is a great way to improve your security and performance, as well as save money.</description></item><item><title>Permissions Management for Amazon Redshift DataShares 💡</title><link>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part3/</link><pubDate>Sat, 20 May 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part3/</guid><description>Permissions Management for Amazon Redshift DataShares What is Amazon Redshift Data Sharing?
-Amazon Redshift Data Sharing is a feature that enables Redshift cluster owners to share live data across different Amazon Redshift clusters, accounts, and regions. With data sharing, users can easily and securely share data with other Redshift users, without having to copy or move the data. What are Amazon Redshift Data Sharing Benefits?
-Data sharing is a great way to improve your security and performance, as well as save money.</description></item><item><title>Perform Workload Isolation using Amazon Redshift Data Sharing 💡</title><link>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part2/</link><pubDate>Fri, 19 May 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part2/</guid><description>Perform Workload Isolation using Amazon Redshift Data Sharing Introduction
-What is Amazon Redshift Data Sharing?
-Amazon Redshift Data Sharing is a feature that enables Redshift cluster owners to share live data across different Amazon Redshift clusters, accounts, and regions. With data sharing, users can easily and securely share data with other Redshift users, without having to copy or move the data. What are Amazon Redshift Data Sharing Benefits?
-Data sharing is a great way to improve your security and performance, as well as save money.</description></item><item><title>Seamless Data Sharing Using Amazon Redshift 🔍</title><link>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part1/</link><pubDate>Sun, 02 Apr 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part1/</guid><description>Seamless Data Sharing Using Amazon Redshift Introduction
-What is Amazon Redshift?
-Amazon Redshift is a fast, fully managed, petabyte-scale cloud-based data warehouse service. It makes it simple and cost-effective to efficiently run your analytics workloads at scale. Amazon Redshift uses columnar storage (also known as columnstore) to store your data in columns instead of rows, which allows it to make more efficient use of storage space and compute resources than traditional row-oriented databases like MySQL or PostgreSQL.</description></item><item><title>Overview of Amazon Modern Data Redshift Warehouse</title><link>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</link><pubDate>Sun, 09 Jan 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</guid><description>Overview of Amazon Modern Data Redshift Warehouse Overview
-Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.
-This session will provide an overview of Amazon Redshift like overview, architecture, distribution keys and sort keys, Redshift spectrum, Advance feature, etc.
-It is hosted by AWS UserGroup Mumbai to spread the knowledge of Amazon Modern Data Redshift Warehouse</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redshift on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/redshift/</link><description>Recent content in Redshift on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/redshift/index.xml" rel="self" type="application/rss+xml"/><item><title>Redshift Data Analysis with Generative SQL 🔍</title><link>https://sanchitdilipjain.github.io/post/rs-eda-genai/</link><pubDate>Sun, 07 Jul 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/rs-eda-genai/</guid><description>&lt;h2 id="redshift-data-analysis-with-generative-sql">Redshift Data Analysis with Generative SQL&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>What is Amazon Redshift Serverless?&lt;/p>
+&lt;ul>
+&lt;li>Amazon Redshift Serverless makes it convenient for you to run and scale analytics without having to provision and manage data warehouses.&lt;/li>
+&lt;li>Amazon Redshift automatically provisions and scales data warehouse capacity to deliver fast performance for demanding and unpredictable workloads. You pay only for the capacity that you use.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What is Amazon Q?&lt;/p>
+&lt;ul>
+&lt;li>Amazon Q generates code, tests, debugs, and has multistep planning and reasoning capabilities that can transform and implement new code generated from developer requests.&lt;/li>
+&lt;li>Amazon Q also makes it easier for employees to get answers to questions across business data such as company policies, product information, business results, code base, employees, and many other topics by connecting to enterprise data repositories to summarize the data logically, analyze trends, and engage in dialogue about the data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Demo&lt;/strong>&lt;/p></description></item><item><title>Amazon Redshift ML - Overview 🔍</title><link>https://sanchitdilipjain.github.io/post/amazon-rs-serverless-ml/</link><pubDate>Mon, 15 Apr 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-rs-serverless-ml/</guid><description>&lt;h2 id="amazon-redshift-ml---overview">Amazon Redshift ML - Overview&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Amazon Redshift ML makes it easy for data analysts and database developers to create, train, and apply machine learning models using familiar SQL commands in Amazon Redshift data warehouses.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>With Redshift ML, you can take advantage of Amazon SageMaker, a fully managed machine learning service, without learning new tools or languages. Simply use SQL statements to create and train Amazon SageMaker machine learning models using your Redshift data and then use these models to make predictions.&lt;/p></description></item><item><title>Monitoring and Security of Amazon Redshift DataShares 💡</title><link>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part4/</link><pubDate>Sat, 20 May 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part4/</guid><description>&lt;h2 id="monitoring-and-security-of-amazon-redshift-datashares">Monitoring and Security of Amazon Redshift DataShares&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>What is Amazon Redshift Data Sharing?&lt;/p>
+&lt;ul>
+&lt;li>Amazon Redshift Data Sharing is a feature that enables Redshift cluster owners to share live data across different Amazon Redshift clusters, accounts, and regions.&lt;/li>
+&lt;li>With data sharing, users can easily and securely share data with other Redshift users, without having to copy or move the data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What are Amazon Redshift Data Sharing Benefits?&lt;/p>
+&lt;ul>
+&lt;li>Data sharing is a great way to improve your security and performance, as well as save money.
+&lt;ul>
+&lt;li>&lt;strong>Enhanced Security&lt;/strong> - By using Amazon Redshift data sharing, you can ensure that only authorized users have access to sensitive data by limiting the number of tables they can access. This helps prevent accidental or malicious disclosure of confidential information during queries and analysis.&lt;/li>
+&lt;li>&lt;strong>Improved Performance&lt;/strong> - Data sharing improves query performance by allowing multiple users with different privileges to access the same table simultaneously without affecting one another&amp;rsquo;s results or causing errors in the query plan generated by SQL queries run against it (for example, if two people were trying to run a join on two distinct tables).&lt;/li>
+&lt;li>&lt;strong>Cost savings&lt;/strong> - Sharing data across accounts and regions can help to reduce data storage costs and eliminate the need to move data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Query to track all changes to the datashares: We can use the &lt;strong>svl_datashare_change_log&lt;/strong> view for tracking changes to datashares on both producer and consumer redshift clusters.&lt;/p></description></item><item><title>Permissions Management for Amazon Redshift DataShares 💡</title><link>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part3/</link><pubDate>Sat, 20 May 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part3/</guid><description>&lt;h2 id="permissions-management-for-amazon-redshift-datashares">Permissions Management for Amazon Redshift DataShares&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>What is Amazon Redshift Data Sharing?&lt;/p>
+&lt;ul>
+&lt;li>Amazon Redshift Data Sharing is a feature that enables Redshift cluster owners to share live data across different Amazon Redshift clusters, accounts, and regions.&lt;/li>
+&lt;li>With data sharing, users can easily and securely share data with other Redshift users, without having to copy or move the data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What are Amazon Redshift Data Sharing Benefits?&lt;/p>
+&lt;ul>
+&lt;li>Data sharing is a great way to improve your security and performance, as well as save money.
+&lt;ul>
+&lt;li>&lt;strong>Enhanced Security&lt;/strong> - By using Amazon Redshift data sharing, you can ensure that only authorized users have access to sensitive data by limiting the number of tables they can access. This helps prevent accidental or malicious disclosure of confidential information during queries and analysis.&lt;/li>
+&lt;li>&lt;strong>Improved Performance&lt;/strong> - Data sharing improves query performance by allowing multiple users with different privileges to access the same table simultaneously without affecting one another&amp;rsquo;s results or causing errors in the query plan generated by SQL queries run against it (for example, if two people were trying to run a join on two distinct tables).&lt;/li>
+&lt;li>&lt;strong>Cost savings&lt;/strong> - Sharing data across accounts and regions can help to reduce data storage costs and eliminate the need to move data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Adding/Removing individual objects from DataShares&lt;/p></description></item><item><title>Perform Workload Isolation using Amazon Redshift Data Sharing 💡</title><link>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part2/</link><pubDate>Fri, 19 May 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part2/</guid><description>&lt;h2 id="perform-workload-isolation-using-amazon-redshift-data-sharing">Perform Workload Isolation using Amazon Redshift Data Sharing&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>What is Amazon Redshift Data Sharing?&lt;/p>
+&lt;ul>
+&lt;li>Amazon Redshift Data Sharing is a feature that enables Redshift cluster owners to share live data across different Amazon Redshift clusters, accounts, and regions.&lt;/li>
+&lt;li>With data sharing, users can easily and securely share data with other Redshift users, without having to copy or move the data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What are Amazon Redshift Data Sharing Benefits?&lt;/p>
+&lt;ul>
+&lt;li>Data sharing is a great way to improve your security and performance, as well as save money.
+&lt;ul>
+&lt;li>&lt;strong>Enhanced Security&lt;/strong> - By using Amazon Redshift data sharing, you can ensure that only authorized users have access to sensitive data by limiting the number of tables they can access. This helps prevent accidental or malicious disclosure of confidential information during queries and analysis.&lt;/li>
+&lt;li>&lt;strong>Improved Performance&lt;/strong> - Data sharing improves query performance by allowing multiple users with different privileges to access the same table simultaneously without affecting one another&amp;rsquo;s results or causing errors in the query plan generated by SQL queries run against it (for example, if two people were trying to run a join on two distinct tables).&lt;/li>
+&lt;li>&lt;strong>Cost savings&lt;/strong> - Sharing data across accounts and regions can help to reduce data storage costs and eliminate the need to move data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Demo&lt;/strong>&lt;/p></description></item><item><title>Seamless Data Sharing Using Amazon Redshift 🔍</title><link>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part1/</link><pubDate>Sun, 02 Apr 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/amazon-redshift-data-sharing-part1/</guid><description>&lt;h2 id="seamless-data-sharing-using-amazon-redshift">Seamless Data Sharing Using Amazon Redshift&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>What is Amazon Redshift?&lt;/p>
+&lt;ul>
+&lt;li>Amazon Redshift is a fast, fully managed, petabyte-scale cloud-based data warehouse service. It makes it simple and cost-effective to efficiently run your analytics workloads at scale.&lt;/li>
+&lt;li>Amazon Redshift uses columnar storage (also known as columnstore) to store your data in columns instead of rows, which allows it to make more efficient use of storage space and compute resources than traditional row-oriented databases like MySQL or PostgreSQL.&lt;/li>
+&lt;li>In addition to its performance benefits, columnar storage also enables fast queries based on specific values within each column&amp;ndash;for example: &amp;ldquo;find all customers who ordered product X between dates Y1 and Y2.&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What is Amazon Redshift Data Sharing?&lt;/p></description></item><item><title>Overview of Amazon Modern Data Redshift Warehouse</title><link>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</link><pubDate>Sun, 09 Jan 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</guid><description>&lt;h2 id="overview-of-amazon-modern-data-redshift-warehouse">Overview of Amazon Modern Data Redshift Warehouse&lt;/h2>
+&lt;p>&lt;strong>Overview&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>This session will provide an overview of Amazon Redshift like overview, architecture, distribution keys and sort keys, Redshift spectrum, Advance feature, etc.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>It is hosted by AWS UserGroup Mumbai to spread the knowledge of Amazon Modern Data Redshift Warehouse&lt;/p></description></item></channel></rss>

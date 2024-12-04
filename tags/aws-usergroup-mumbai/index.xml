@@ -1,14 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aws-Usergroup-Mumbai on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/aws-usergroup-mumbai/</link><description>Recent content in Aws-Usergroup-Mumbai on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/aws-usergroup-mumbai/index.xml" rel="self" type="application/rss+xml"/><item><title>Let's explore Apache Kafka, the Easy Way on AWS!</title><link>https://sanchitdilipjain.github.io/webinar/lets-explore-apache-kafka-the-easy-way-on-aws/</link><pubDate>Wed, 09 Nov 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/lets-explore-apache-kafka-the-easy-way-on-aws/</guid><description>Let&amp;rsquo;s explore Apache Kafka, the Easy Way on AWS! Overview
-Apache Kafka is powerful. But &amp;ldquo;with great power, comes great responsibility&amp;rdquo;! Fortunately, with Amazon MSK, developers can focus on how to build with Kafka instead of being responsible for managing a large-scale distributed system.
-This session will provide an overview of Amazon MSK (including its Serverless flavor) and MSK Connect. It will cover architecture along with hands-on demos to give you a better understanding of how to leverage Kafka on AWS to build practical solutions for everyday use cases.</description></item><item><title>Let's Code AWS CDK</title><link>https://sanchitdilipjain.github.io/webinar/lets-explore-aws-cdk/</link><pubDate>Sat, 08 Oct 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/lets-explore-aws-cdk/</guid><description>Let&amp;rsquo;s Code AWS CDK Overview
-&amp;ldquo;Let&amp;rsquo;s Code AWS CDK&amp;rdquo; which is The AWS Cloud Development Kit (AWS CDK), an open-source software development framework to define your cloud application resources using familiar programming languages.
-We will cover the Flavors of CDK Construct, Creating CDK Project in Python, and Step-by-Step Deployment CDK project.
-It is hosted by AWS UserGroup Mumbai to spread the knowledge of AWS Cloud Development Kit (AWS CDK)
-Speakers.</description></item><item><title>Serverless, No server, Really?</title><link>https://sanchitdilipjain.github.io/webinar/serverless-no-server-really/</link><pubDate>Sun, 22 May 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/serverless-no-server-really/</guid><description>Serverless, No server, Really? Overview
-AWS User Group Nashik-Mumbai-Pune is excited to announce our finale session as part of Serverless, No server, Really? series.
-This session will explore other lesser-known serverless services that can help leverage the true power of serverless like Fargate, the difference between EC2 Fargate and Lambda, an overview of SAM, AWS Step Functions, AWS AppSync, Amazon EventBridge, Aurora Serverless, RDS Proxy, and much more.
-Speakers.
-Aishwarya Gupta - Senior Cloud Engineer, Quantiphi Jones Zachariah Noel N - AWS Serverless Hero &amp;amp; Sr.</description></item><item><title>Overview of Amazon Modern Data Redshift Warehouse</title><link>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</link><pubDate>Sun, 09 Jan 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</guid><description>Overview of Amazon Modern Data Redshift Warehouse Overview
-Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.
-This session will provide an overview of Amazon Redshift like overview, architecture, distribution keys and sort keys, Redshift spectrum, Advance feature, etc.
-It is hosted by AWS UserGroup Mumbai to spread the knowledge of Amazon Modern Data Redshift Warehouse</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aws-Usergroup-Mumbai on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/aws-usergroup-mumbai/</link><description>Recent content in Aws-Usergroup-Mumbai on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/aws-usergroup-mumbai/index.xml" rel="self" type="application/rss+xml"/><item><title>Let's explore Apache Kafka, the Easy Way on AWS!</title><link>https://sanchitdilipjain.github.io/webinar/lets-explore-apache-kafka-the-easy-way-on-aws/</link><pubDate>Wed, 09 Nov 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/lets-explore-apache-kafka-the-easy-way-on-aws/</guid><description>&lt;h2 id="lets-explore-apache-kafka-the-easy-way-on-aws">Let&amp;rsquo;s explore Apache Kafka, the Easy Way on AWS!&lt;/h2>
+&lt;p>&lt;strong>Overview&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Apache Kafka is powerful. But &amp;ldquo;with great power, comes great responsibility&amp;rdquo;! Fortunately, with Amazon MSK, developers can focus on how to build with Kafka instead of being responsible for managing a large-scale distributed system.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>This session will provide an overview of Amazon MSK (including its Serverless flavor) and MSK Connect. It will cover architecture along with hands-on demos to give you a better understanding of how to leverage Kafka on AWS to build practical solutions for everyday use cases.&lt;/p></description></item><item><title>Let's Code AWS CDK</title><link>https://sanchitdilipjain.github.io/webinar/lets-explore-aws-cdk/</link><pubDate>Sat, 08 Oct 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/lets-explore-aws-cdk/</guid><description>&lt;h2 id="lets-code-aws-cdk">Let&amp;rsquo;s Code AWS CDK&lt;/h2>
+&lt;p>&lt;strong>Overview&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&amp;ldquo;Let&amp;rsquo;s Code AWS CDK&amp;rdquo; which is The AWS Cloud Development Kit (AWS CDK), an open-source software development framework to define your cloud application resources using familiar programming languages.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>We will cover the Flavors of CDK Construct, Creating CDK Project in Python, and Step-by-Step Deployment CDK project.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>It is hosted by AWS UserGroup Mumbai to spread the knowledge of AWS Cloud Development Kit (AWS CDK)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Speakers.&lt;/p></description></item><item><title>Serverless, No server, Really?</title><link>https://sanchitdilipjain.github.io/webinar/serverless-no-server-really/</link><pubDate>Sun, 22 May 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/serverless-no-server-really/</guid><description>&lt;h2 id="serverless-no-server-really">Serverless, No server, Really?&lt;/h2>
+&lt;p>&lt;strong>Overview&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>AWS User Group Nashik-Mumbai-Pune is excited to announce our finale session as part of Serverless, No server, Really? series.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>This session will explore other lesser-known serverless services that can help leverage the true power of serverless like Fargate, the difference between EC2 Fargate and Lambda, an overview of SAM, AWS Step Functions, AWS AppSync, Amazon EventBridge, Aurora Serverless, RDS Proxy, and much more.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Speakers.&lt;/p>
+&lt;ol>
+&lt;li>Aishwarya Gupta - Senior Cloud Engineer, Quantiphi&lt;/li>
+&lt;li>Jones Zachariah Noel N - AWS Serverless Hero &amp;amp; Sr.Developer Advocate, Freshworks&lt;/li>
+&lt;li>Anurag Kale - AWS Data Hero &amp;amp; Cloud Software Architect, Polestar&lt;/li>
+&lt;li>Srushith Repakula - AWS Serverless Hero &amp;amp; Head of Engineering, KonfHub&lt;/li>
+&lt;li>Sanchit Jain - AWS Community Hero &amp;amp; Data Analytics &amp;amp; Cloud Practice Lead, Quantiphi&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://youtu.be/Khi5jo1Zn5E">&lt;img src="https://img.youtube.com/vi/Khi5jo1Zn5E/maxresdefault.jpg" alt="Watch the video">&lt;/a>&lt;/p></description></item><item><title>Overview of Amazon Modern Data Redshift Warehouse</title><link>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</link><pubDate>Sun, 09 Jan 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</guid><description>&lt;h2 id="overview-of-amazon-modern-data-redshift-warehouse">Overview of Amazon Modern Data Redshift Warehouse&lt;/h2>
+&lt;p>&lt;strong>Overview&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>This session will provide an overview of Amazon Redshift like overview, architecture, distribution keys and sort keys, Redshift spectrum, Advance feature, etc.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>It is hosted by AWS UserGroup Mumbai to spread the knowledge of Amazon Modern Data Redshift Warehouse&lt;/p></description></item></channel></rss>

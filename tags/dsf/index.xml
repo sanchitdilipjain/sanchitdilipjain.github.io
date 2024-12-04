@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dsf on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/dsf/</link><description>Recent content in Dsf on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/dsf/index.xml" rel="self" type="application/rss+xml"/><item><title>Speed Up Your Data Journey: Building with the AWS Data Solutions Framework 🔍</title><link>https://sanchitdilipjain.github.io/post/aws-data-solutions-framework/</link><pubDate>Sat, 20 Apr 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-data-solutions-framework/</guid><description>Speed Up Your Data Journey: Building with the AWS Data Solutions Framework Introduction
-The cloud has revolutionized data management, offering on-demand scalability and a vast array of services for building robust data solutions. But navigating the complexities of AWS and architecting secure, efficient data pipelines can be time-consuming.
-Unveiling the Framework&amp;rsquo;s Magic
-Built on the AWS Cloud Development Kit (CDK), DSF offers reusable constructs representing common data platform components like data lakes, data pipelines, and analytics environments.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dsf on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/dsf/</link><description>Recent content in Dsf on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/dsf/index.xml" rel="self" type="application/rss+xml"/><item><title>Speed Up Your Data Journey: Building with the AWS Data Solutions Framework 🔍</title><link>https://sanchitdilipjain.github.io/post/aws-data-solutions-framework/</link><pubDate>Sat, 20 Apr 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-data-solutions-framework/</guid><description>&lt;h2 id="speed-up-your-data-journey-building-with-the-aws-data-solutions-framework">Speed Up Your Data Journey: Building with the AWS Data Solutions Framework&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The cloud has revolutionized data management, offering on-demand scalability and a vast array of services for building robust data solutions. But navigating the complexities of AWS and architecting secure, efficient data pipelines can be time-consuming.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Unveiling the Framework&amp;rsquo;s Magic&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Built on the AWS Cloud Development Kit (CDK), DSF offers reusable constructs representing common data platform components like data lakes, data pipelines, and analytics environments. These constructs encapsulate best practices and smart defaults, allowing you to focus on your specific use case and business logic.&lt;/li>
+&lt;li>Here&amp;rsquo;s a breakdown of DSF&amp;rsquo;s key features:
+&lt;ul>
+&lt;li>&lt;strong>Infrastructure as Code (IaC):&lt;/strong> Define your data solution infrastructure in code using familiar languages like Python or TypeScript. This promotes version control, repeatability, and easier collaboration.&lt;/li>
+&lt;li>&lt;strong>Pre-built Constructs:&lt;/strong> Leverage pre-built building blocks for common data platform components, reducing development time significantly.&lt;/li>
+&lt;li>&lt;strong>Customization:&lt;/strong> DSF is built to be flexible. You can customize constructs, use subsets of the framework, or even extend your existing infrastructure with it.&lt;/li>
+&lt;li>&lt;strong>Open Source:&lt;/strong> DSF is freely available under the Apache 2.0 license, allowing for community contributions and customizations.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Benefits of using DSF:&lt;/p></description></item></channel></rss>

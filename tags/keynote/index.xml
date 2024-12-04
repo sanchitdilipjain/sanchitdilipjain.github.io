@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Keynote on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/keynote/</link><description>Recent content in Keynote on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/keynote/index.xml" rel="self" type="application/rss+xml"/><item><title>GenAI Revolution: Dr. Swami's AWS re:Invent 2023 Keynote 🔍</title><link>https://sanchitdilipjain.github.io/post/aws-reinvent-2023-keynote-swami/</link><pubDate>Sat, 16 Dec 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-reinvent-2023-keynote-swami/</guid><description>GenAI Revolution: Dr. Swami&amp;rsquo;s AWS re:Invent 2023 Keynote Introduction:
-The buzz around generative AI (Gen AI) is electric, and for good reason. This transformative technology promises to reshape industries, redefine work, and unleash a wave of unprecedented creativity. Dr. Swami Sivasubramanian&amp;rsquo;s keynote at AWS re:Invent 2023 shed light on this captivating future, showcasing how AWS is empowering customers to become co-creators in the Gen AI revolution. Symbiotic Relationship:
-Dr. Sivasubramanian emphasizes the symbiotic relationship between data, Gen AI, and humans.</description></item><item><title>Reinventing the Future: Adam Selipsky's AWS re:Invent 2023 Keynote🔍</title><link>https://sanchitdilipjain.github.io/post/aws-reinvent-2023-keynote-adam/</link><pubDate>Tue, 12 Dec 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-reinvent-2023-keynote-adam/</guid><description>Reinventing the Future: Adam Selipsky&amp;rsquo;s AWS re:Invent 2023 Keynote Introduction:
-AWS re:Invent 2023 wasn&amp;rsquo;t just a tech conference; it was a rallying cry for reinvention. CEO Adam Selipsky&amp;rsquo;s keynote wasn&amp;rsquo;t simply about new features and products, but about empowering businesses of all sizes to reimagine their future and unlock groundbreaking possibilities. With real-world examples and a clear vision for the future, Selipsky painted a picture of how AWS is becoming the engine of innovation across industries.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Keynote on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/keynote/</link><description>Recent content in Keynote on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/keynote/index.xml" rel="self" type="application/rss+xml"/><item><title>We invent so you can reinvent: Matt Garman's AWS re:Invent 2024 Keynote🔍</title><link>https://sanchitdilipjain.github.io/post/aws-reinvent-2024-keynote-matt/</link><pubDate>Wed, 04 Dec 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-reinvent-2024-keynote-matt/</guid><description>&lt;h2 id="we-invent-so-you-can-reinvent-matt-garmans-aws-reinvent-2024-keynote">We invent so you can reinvent: Matt Garman&amp;rsquo;s AWS re:Invent 2024 Keynote&lt;/h2>
+&lt;p>&lt;strong>Overview:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The 13th annual AWS re:Invent has kicked off with an electrifying keynote from Matt Garman, the CEO of AWS.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>This year, the event has drawn nearly 60,000 attendees in person and 400,000 online, highlighting the growing interest in cloud innovations.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Below are the key announcements and highlights from Matt&amp;rsquo;s presentation.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Commitment to Startups:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Matt expressed strong support for startups, emphasizing their agility and innovative potential. He announced a significant initiative where AWS will provide $1 billion in credits to startups globally by 2025, reinforcing its commitment to fostering innovation in this sector.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://sanchitdilipjain.github.io/images/matt-keynote/startups.png" alt="">&lt;/p></description></item><item><title>GenAI Revolution: Dr. Swami's AWS re:Invent 2023 Keynote 🔍</title><link>https://sanchitdilipjain.github.io/post/aws-reinvent-2023-keynote-swami/</link><pubDate>Sat, 16 Dec 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-reinvent-2023-keynote-swami/</guid><description>&lt;h2 id="genai-revolution-dr-swamis-aws-reinvent-2023-keynote">GenAI Revolution: Dr. Swami&amp;rsquo;s AWS re:Invent 2023 Keynote&lt;/h2>
+&lt;p>&lt;strong>Introduction:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>The buzz around generative AI (Gen AI) is electric, and for good reason. This transformative technology promises to reshape industries, redefine work, and unleash a wave of unprecedented creativity. Dr. Swami Sivasubramanian&amp;rsquo;s keynote at AWS re:Invent 2023 shed light on this captivating future, showcasing how AWS is empowering customers to become co-creators in the Gen AI revolution.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Symbiotic Relationship:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Dr. Sivasubramanian emphasizes the symbiotic relationship between data, Gen AI, and humans. Data fuels the development of foundational models, which power Gen AI applications. Humans, in turn, provide the creativity, ethics, and adaptability needed to guide and utilize Gen AI effectively.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Key Takeaways:&lt;/strong>&lt;/p></description></item><item><title>Reinventing the Future: Adam Selipsky's AWS re:Invent 2023 Keynote🔍</title><link>https://sanchitdilipjain.github.io/post/aws-reinvent-2023-keynote-adam/</link><pubDate>Tue, 12 Dec 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-reinvent-2023-keynote-adam/</guid><description>&lt;h2 id="reinventing-the-future-adam-selipskys-aws-reinvent-2023-keynote">Reinventing the Future: Adam Selipsky&amp;rsquo;s AWS re:Invent 2023 Keynote&lt;/h2>
+&lt;p>&lt;strong>Introduction:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>AWS re:Invent 2023 wasn&amp;rsquo;t just a tech conference; it was a rallying cry for reinvention. CEO Adam Selipsky&amp;rsquo;s keynote wasn&amp;rsquo;t simply about new features and products, but about empowering businesses of all sizes to reimagine their future and unlock groundbreaking possibilities.&lt;/li>
+&lt;li>With real-world examples and a clear vision for the future, Selipsky painted a picture of how AWS is becoming the engine of innovation across industries.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Key Takeaways:&lt;/strong>&lt;/p></description></item></channel></rss>

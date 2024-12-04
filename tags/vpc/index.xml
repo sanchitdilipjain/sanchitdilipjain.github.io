@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vpc on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/vpc/</link><description>Recent content in Vpc on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/vpc/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazon VPC Network Access Analyzer 🔍</title><link>https://sanchitdilipjain.github.io/post/aws-vpc-network-access/</link><pubDate>Mon, 02 Jan 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-vpc-network-access/</guid><description>Amazon VPC Network Access Analyzer Introduction
-What is VPC Network Access Analyzer?
-Network Access Analyzer is a feature that identifies unintended network access to your resources on AWS.
-Understand, verify, and improve your network security posture: Network Access Analyzer helps you identify unintended network access relative to your security and compliance requirements, enabling you to improve your network security. Demonstrate compliance: You can use Network Access Analyzer to demonstrate that your network on AWS meets specific compliance requirements.</description></item><item><title>Introduction to Amazon Layered Virtual Private Cloud Architecture 🛡️</title><link>https://sanchitdilipjain.github.io/post/aws-layered-vpc-architecture/</link><pubDate>Mon, 02 Aug 2021 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-layered-vpc-architecture/</guid><description>Introduction to Amazon Layered Virtual Private Cloud Architecture 1. Overview
-This blog describes the basic Seven Layered network architecture. The following diagram shows the various components of the architecture; the VPC with two availability zones with several AWS Services, each of which is in place to support the organization within AWS Cloud. Each service has a high-level description in the sections below that provides an overview of that particular component. 2.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vpc on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/vpc/</link><description>Recent content in Vpc on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/vpc/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazon VPC Network Access Analyzer 🔍</title><link>https://sanchitdilipjain.github.io/post/aws-vpc-network-access/</link><pubDate>Mon, 02 Jan 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-vpc-network-access/</guid><description>&lt;h2 id="amazon-vpc-network-access-analyzer">Amazon VPC Network Access Analyzer&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>What is VPC Network Access Analyzer?&lt;/p>
+&lt;p>Network Access Analyzer is a feature that identifies unintended network access to your resources on AWS.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Understand, verify, and improve your network security posture:&lt;/strong> Network Access Analyzer helps you identify unintended network access relative to your security and compliance requirements, enabling you to improve your network security.&lt;/li>
+&lt;li>&lt;strong>Demonstrate compliance:&lt;/strong> You can use Network Access Analyzer to demonstrate that your network on AWS meets specific compliance requirements.&lt;/li>
+&lt;li>&lt;strong>Verify your network security posture:&lt;/strong> Network Access Analyzer lets you specify your network security requirements and identify potential network paths that do not meet your requirements.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Why do you need a Network Access Analyzer?&lt;/p></description></item><item><title>Introduction to Amazon Layered Virtual Private Cloud Architecture 🛡️</title><link>https://sanchitdilipjain.github.io/post/aws-layered-vpc-architecture/</link><pubDate>Mon, 02 Aug 2021 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-layered-vpc-architecture/</guid><description>&lt;h3 id="introduction-to-amazon-layered-virtual-private-cloud-architecture">Introduction to Amazon Layered Virtual Private Cloud Architecture&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>1. Overview&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>This blog describes the basic Seven Layered network architecture. The following diagram shows the various components of the architecture; the VPC with two availability zones with several AWS Services, each of which is in place to support the organization within AWS Cloud.&lt;/li>
+&lt;li>Each service has a high-level description in the sections below that provides an overview of that particular component.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>2. Architecture Diagram&lt;/strong>&lt;/p></description></item></channel></rss>

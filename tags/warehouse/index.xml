@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Warehouse on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/warehouse/</link><description>Recent content in Warehouse on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/warehouse/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview of Amazon Modern Data Redshift Warehouse</title><link>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</link><pubDate>Sun, 09 Jan 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</guid><description>Overview of Amazon Modern Data Redshift Warehouse Overview
-Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.
-This session will provide an overview of Amazon Redshift like overview, architecture, distribution keys and sort keys, Redshift spectrum, Advance feature, etc.
-It is hosted by AWS UserGroup Mumbai to spread the knowledge of Amazon Modern Data Redshift Warehouse</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Warehouse on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/warehouse/</link><description>Recent content in Warehouse on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/warehouse/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview of Amazon Modern Data Redshift Warehouse</title><link>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</link><pubDate>Sun, 09 Jan 2022 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/webinar/overview-of-amazon-modern-data-redshift-warehouse/</guid><description>&lt;h2 id="overview-of-amazon-modern-data-redshift-warehouse">Overview of Amazon Modern Data Redshift Warehouse&lt;/h2>
+&lt;p>&lt;strong>Overview&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>This session will provide an overview of Amazon Redshift like overview, architecture, distribution keys and sort keys, Redshift spectrum, Advance feature, etc.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>It is hosted by AWS UserGroup Mumbai to spread the knowledge of Amazon Modern Data Redshift Warehouse&lt;/p></description></item></channel></rss>

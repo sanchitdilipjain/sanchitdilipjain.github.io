@@ -1,7 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Athena on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/athena/</link><description>Recent content in Athena on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/athena/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview of Amazon Athena for Apache Spark 💡</title><link>https://sanchitdilipjain.github.io/post/overview-of-athena-spark/</link><pubDate>Mon, 21 Aug 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/overview-of-athena-spark/</guid><description>Overview of Amazon Athena for Apache Spark Introduction
-Amazon Athena for Apache Spark provides interactive analytics under a second to analyze petabytes of data using open source spark framework. Interactive Spark applications start instantly and run faster with our optimized Spark runtime, so you spend more time on insights, not waiting for results. Build Spark applications using the expressiveness of Python with a simplified notebook experience in an Athena console or through Athena APIs.</description></item><item><title>Query Insights from AWS CloudTrail Logs with AWS Athena 🔎</title><link>https://sanchitdilipjain.github.io/post/integrating-cloudtrail-logs-with-athena/</link><pubDate>Tue, 09 Mar 2021 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/integrating-cloudtrail-logs-with-athena/</guid><description>Fetch Insights from AWS CloudTrail Logs with Athena Introduction
-Leveraging AWS Athena with CloudTrail logs is an impactful method to refine your insights of AWS service activity. For example, you can leverage queries to detect findings and further trace activity by attributes, like source IP address or user etc
-Below are the steps we need to follow to implement this tutorial
-Configure S3 bucket
-Navigate to S3 console
-Select Create bucket button</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Athena on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/athena/</link><description>Recent content in Athena on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/athena/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview of Amazon Athena for Apache Spark 💡</title><link>https://sanchitdilipjain.github.io/post/overview-of-athena-spark/</link><pubDate>Mon, 21 Aug 2023 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/overview-of-athena-spark/</guid><description>&lt;h2 id="overview-of-amazon-athena-for-apache-spark">Overview of Amazon Athena for Apache Spark&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Amazon Athena for Apache Spark provides interactive analytics under a second to analyze petabytes of data using open source spark framework. Interactive Spark applications start instantly and run faster with our optimized Spark runtime, so you spend more time on insights, not waiting for results.&lt;/li>
+&lt;li>Build Spark applications using the expressiveness of Python with a simplified notebook experience in an Athena console or through Athena APIs.&lt;/li>
+&lt;li>With the Athena serverless, fully managed model, there are no resources to manage, provision, and configure and no minimum fee or setup cost. You only pay for the queries that you run.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>How it works&lt;/strong>&lt;/p></description></item><item><title>Query Insights from AWS CloudTrail Logs with AWS Athena 🔎</title><link>https://sanchitdilipjain.github.io/post/integrating-cloudtrail-logs-with-athena/</link><pubDate>Tue, 09 Mar 2021 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/integrating-cloudtrail-logs-with-athena/</guid><description>&lt;h2 id="fetch-insights-from-aws-cloudtrail-logs-with-athena">Fetch Insights from AWS CloudTrail Logs with Athena&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;p>Leveraging AWS Athena with CloudTrail logs is an impactful method to refine your insights of AWS service activity. For example, you can leverage queries to detect findings and further trace activity by attributes, like source IP address or user etc&lt;/p>
+&lt;p>Below are the steps we need to follow to implement this tutorial&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Configure S3 bucket&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Navigate to S3 console&lt;/p>
+&lt;p>&lt;img src="https://sanchitdilipjain.github.io/images/integrating-cloudtrail-logs-with-athena/image1.png" alt="image1">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select Create bucket button&lt;/p></description></item></channel></rss>

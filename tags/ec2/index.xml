@@ -1,5 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ec2 on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/ec2/</link><description>Recent content in Ec2 on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 09:03:58 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/ec2/index.xml" rel="self" type="application/rss+xml"/><item><title>Build Amazon Ec2 Image using AWS EC2 Image Builder ⚒️</title><link>https://sanchitdilipjain.github.io/post/aws-image-builder-pipeline-ec2/</link><pubDate>Fri, 31 Dec 2021 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-image-builder-pipeline-ec2/</guid><description>Ec2 Image pipeline using AWS EC2 Image Builder Introduction
-EC2 Image Builder is a wholly managed AWS service that simplifies the process to automate the creation, management, and deployment of tailored, secure, and up-to-date server images that are pre-installed and pre-configured with software and settings to match specific IT standards.
-Features of EC2 Image Builder
-Greater productivity and reduced operations for building compliant and up-to-date images The more excellent service uptime Improved the security standard for deployments Centralized enforcement and lineage tracking Simplified sharing of resources across AWS accounts How EC2 Image Builder works?</description></item><item><title>How to deploy Grafana on Amazon Ec2? 🚀</title><link>https://sanchitdilipjain.github.io/post/deploy-grafana-ec2/</link><pubDate>Sun, 14 Feb 2021 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/deploy-grafana-ec2/</guid><description>Deploy Grafana Introduction Grafana is open-source software famous for creating graphs and visualizations for end-users to articulate the time-series data. In this tutorial, we will focus on the following steps and it will carry out on an EC2 Instance with Amazon Linux 2 as the operating system
-Provisioning Ec2 server Installation of Grafana Testing the setup Adding Data Source in the Grafana Testing CloudWatch as a Data Source Step 1 - Provisioning Ec2 server</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ec2 on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/ec2/</link><description>Recent content in Ec2 on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2024 15:21:06 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/ec2/index.xml" rel="self" type="application/rss+xml"/><item><title>Build Amazon Ec2 Image using AWS EC2 Image Builder ⚒️</title><link>https://sanchitdilipjain.github.io/post/aws-image-builder-pipeline-ec2/</link><pubDate>Fri, 31 Dec 2021 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/aws-image-builder-pipeline-ec2/</guid><description>&lt;h2 id="ec2-image-pipeline-using-aws-ec2-image-builder">Ec2 Image pipeline using AWS EC2 Image Builder&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>EC2 Image Builder is a wholly managed AWS service that simplifies the process to automate the creation, management, and deployment of tailored, secure, and up-to-date server images that are pre-installed and pre-configured with software and settings to match specific IT standards.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Features of EC2 Image Builder&lt;/p>
+&lt;ul>
+&lt;li>Greater productivity and reduced operations for building compliant and up-to-date images&lt;/li>
+&lt;li>The more excellent service uptime&lt;/li>
+&lt;li>Improved the security standard for deployments&lt;/li>
+&lt;li>Centralized enforcement and lineage tracking&lt;/li>
+&lt;li>Simplified sharing of resources across AWS accounts&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>How EC2 Image Builder works?&lt;/strong>&lt;/p></description></item><item><title>How to deploy Grafana on Amazon Ec2? 🚀</title><link>https://sanchitdilipjain.github.io/post/deploy-grafana-ec2/</link><pubDate>Sun, 14 Feb 2021 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/deploy-grafana-ec2/</guid><description>&lt;h2 id="deploy-grafana">Deploy Grafana&lt;/h2>
+&lt;p>&lt;strong>Introduction&lt;/strong>
+&lt;!-- raw HTML omitted -->Grafana is open-source software famous for creating graphs and visualizations for end-users to articulate the time-series data. In this tutorial, we will focus on the following steps and it will carry out on an EC2 Instance with Amazon Linux 2 as the operating system&lt;/p>
+&lt;ul>
+&lt;li>Provisioning Ec2 server&lt;/li>
+&lt;li>Installation of Grafana&lt;/li>
+&lt;li>Testing the setup&lt;/li>
+&lt;li>Adding Data Source in the Grafana&lt;/li>
+&lt;li>Testing CloudWatch as a Data Source&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Step 1 - Provisioning Ec2 server&lt;/strong>&lt;/p></description></item></channel></rss>
