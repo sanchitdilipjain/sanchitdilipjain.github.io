@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>,Mongodb on Sanchit's blog</title><link>https://sanchitdilipjain.github.io/tags/mongodb/</link><description>Recent content in ,Mongodb on Sanchit's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 06 Dec 2024 18:05:09 +0000</lastBuildDate><atom:link href="https://sanchitdilipjain.github.io/tags/mongodb/index.xml" rel="self" type="application/rss+xml"/><item><title>Security Best Practices for MongoDB on AWS 🔍</title><link>https://sanchitdilipjain.github.io/post/security-practice-mongodb-aws/</link><pubDate>Wed, 04 Dec 2024 12:00:00 +0000</pubDate><guid>https://sanchitdilipjain.github.io/post/security-practice-mongodb-aws/</guid><description>&lt;h2 id="security-best-practices-for-mongodb-on-aws">Security Best Practices for MongoDB on AWS&lt;/h2>
+&lt;p>&lt;strong>Introduction:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>MongoDB is a leading document database known for its flexibility and scalability. As a document-oriented database, it stores data in a format called BSON (Binary JSON), which allows for a more dynamic and flexible data model compared to traditional relational databases.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>This document-based structure enables developers to store complex data types and hierarchical relationships without the constraints of a fixed schema, making it ideal for modern applications that require rapid development and scalability.&lt;/p></description></item></channel></rss>
